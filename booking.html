@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Your Trip - ExploreWorld</title>
+    <link rel="stylesheet" href="project2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ExploreWorld</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="project2.html">Home</a></li>
+                <li><a href="#">Book</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="contactpage.html">Contact</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Booking Form -->
+    <section class="booking-section">
+        <div class="booking-container">
+            <div class="booking-card">
+                <div class="booking-header">
+                    <h2>Book Your Trip</h2>
+                </div>
+                <div class="booking-body">
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="bookingName">Full Name</label>
+                            <input type="text" id="bookingName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingEmail">Email Address</label>
+                            <input type="email" id="bookingEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingDestination">Destination</label>
+                            <select id="bookingDestination" required>
+                                <option value="">Select Destination</option>
+                                <option value="Taj Mahal, Agra">Taj Mahal, Agra</option>
+                                <option value="Mumbai, India">Mumbai, India</option>
+                                <option value="Kerala, India">Kerala, India</option>
+                                <option value="Paris, France">Paris, France</option>
+                                <option value="New York, USA">New York, USA</option>
+                                <option value="Switzerland, Europe">Switzerland, Europe</option>
+                                <option value="Rome, Italy">Rome, Italy</option>
+                                <option value="Bali, Indonesia">Bali, Indonesia</option>
+                                <option value="Darjeeling, West Bengal">Darjeeling, West Bengal</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingDate">Travel Date</label>
+                            <input type="date" id="bookingDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingGuests">Number of Guests</label>
+                            <input type="number" id="bookingGuests" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>ExploreWorld</h3>
+                <p>Your gateway to unforgettable travel experiences. Discover the world with us!</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Book</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Review</a></li>
+                    <li><a href="contactpage.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@exploreworld.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p>Address: 123 Travel Street, Wanderland</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> ExploreWorld. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
